@@ -21,7 +21,7 @@
 #include "../emucore/OSystem.hxx"
 #include "../emucore/Event.hxx"
 #include <string>
-#include "../games/RomSettings.hpp"
+class RomSettings;
 #include "../common/Log.hxx"
 
 #define PADDLE_DELTA 23000
@@ -99,6 +99,7 @@ class ALEState {
 
 };
 
+#include "../games/RomSettings.hpp"
 #endif // __ALE_STATE_HPP__
 
 
