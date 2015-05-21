@@ -118,7 +118,7 @@ int main(int argc, char** argv) {
 
     cout<<readRam(&ale.theOSystem->console().system(),0)<<endl;
    
-    ale.setMode(12);
+    ale.setMode(2);
     cout<<readRam(&ale.theOSystem->console().system(),0)<<endl;
 
     RAMFeatures features;
