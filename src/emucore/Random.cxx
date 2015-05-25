@@ -73,4 +73,3 @@ uInt32 Random::ourSeed = 0;
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 bool Random::ourSeeded = false;
 
-
