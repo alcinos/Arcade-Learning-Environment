@@ -233,6 +233,13 @@ void ALEInterface::setMode(mode_t m)
     romSettings->setMode(m,theOSystem->console().system(),*(environment.get()));
 }
 
+//Returns the vector of difficulties available for the current game.
+//This should be called only after the rom is loaded.
+ModeVect ALEInterface::getAvailableDifficulties()
+{
+    return romSettings->getAvailableDifficulties();
+}
+
 //Sets the difficulty of the game.
 //The difficulty must be an available mode.
 //This should be called only after the rom is loaded.

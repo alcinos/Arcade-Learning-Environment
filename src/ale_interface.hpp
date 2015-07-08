@@ -93,6 +93,10 @@ public:
   //This should be called only after the rom is loaded.
   void setMode(mode_t m);
 
+  //Returns the vector of difficulties available for the current game.
+  //This should be called only after the rom is loaded.
+  DifficultyVect getAvailableDifficulties();
+
   //Sets the difficulty of the game.
   //The difficulty must be an available mode (otherwise it throws an exception).
   //This should be called only after the rom is loaded.
