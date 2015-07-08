@@ -143,10 +143,8 @@ void DoubleDunkSettings::setMode(mode_t m,System &system, StellaEnvironment& env
         environment.act(PLAYER_A_DOWN,PLAYER_B_NOOP);
         environment.act(PLAYER_A_NOOP,PLAYER_B_NOOP);
         for(unsigned i=0;i<4;i++){
-            cout<<(m& (1<<i))<<endl;
             if((m & (1<<i))!=0){ //test if the ith bit is set
                 environment.act(PLAYER_A_RIGHT,PLAYER_B_NOOP);
-                cout<<"setting "<<i<<endl;
             }else{
                 environment.act(PLAYER_A_LEFT,PLAYER_B_NOOP);
             }
